@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: ""
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: "real-estate-332a7.firebaseapp.com",
+  projectId: "real-estate-332a7",
+  storageBucket: "real-estate-332a7.appspot.com",
+  messagingSenderId: "346521343293",
+  appId: "1:346521343293:web:820f2ce06d767fc2046154"
 };
 
 // Initialize Firebase

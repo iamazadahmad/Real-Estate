@@ -1,6 +1,3 @@
-const MONGO = "";
-
-
 import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
@@ -15,14 +12,13 @@ import path from 'path';
 dotenv.config();
 
 mongoose
-     .connect(MONGO)
-     .then(() => {
-          console.log('Connected to MongoDB!');
-     })
-     .catch((err) => {
-          console.log('NOT Connected to MongoDB!');
-          console.log(err);
-     });
+  .connect(process.env.MONGO)
+  .then(() => {
+    console.log('Connected to MongoDB!');
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
 const app = express();
 const __dirname = path.resolve();

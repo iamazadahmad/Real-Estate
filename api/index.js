@@ -10,6 +10,7 @@ import listingRouter from './routes/listing.route.js';
 import cookieParser from 'cookie-parser';
 import consultRouter from './routes/consult.route.js';
 import getConsultRouter from './routes/consult.route.js'
+import path from 'path';
 
 dotenv.config();
 
